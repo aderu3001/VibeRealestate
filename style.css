@@ -3,8 +3,6 @@
    Design: Editorial Luxury · Crisp · Modern · SEO-Optimised
    ═══════════════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
 /* ── TOKENS ── */
 :root {
   --c-ink:       #0C0C0E;
@@ -618,3 +616,19 @@ h1,h2,h3,h4,h5 { line-height:1.1; font-weight:400; }
   .partners-strip .container { flex-direction:column; align-items:flex-start; gap:16px; }
   .footer-bottom { flex-direction:column; gap:12px; text-align:center; }
 }
+
+/* ── WHATSAPP FLOAT ── */
+.whatsapp-float {
+  position:fixed; bottom:28px; right:28px; z-index:999;
+  width:58px; height:58px;
+  background:#25D366; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  color:#fff;
+  box-shadow:0 4px 20px rgba(37,211,102,.4);
+  transition:transform .25s, box-shadow .25s;
+}
+.whatsapp-float:hover { transform:scale(1.1); box-shadow:0 8px 30px rgba(37,211,102,.6); }
+@media (max-width:600px) { .whatsapp-float { bottom:18px; right:18px; width:50px; height:50px; } }
+
+/* ── STICKY NAV SCROLLED STATE ── */
+.site-nav.scrolled { box-shadow:0 2px 20px rgba(0,0,0,.4); }
