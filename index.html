@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ SEO META ═══ -->
+  <title>Best Properties For Sale in Ras Al Khaimah | Vibe Real Estate</title>
+  <meta name="description" content="Discover premium properties for sale & rent in Ras Al Khaimah. Vibe Real Estate specialises in beachfront villas, land plots, luxury apartments & investment opportunities on Al Marjan Island.">
+  <meta name="keywords" content="properties for sale Ras Al Khaimah, RAK real estate, Al Marjan Island property, beachfront villa RAK, buy land Ras Al Khaimah, UAE investment property, Vibe Real Estate">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://viberealestate.ae/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://viberealestate.ae/">
+  <meta property="og:title"       content="Best Properties For Sale in Ras Al Khaimah | Vibe Real Estate">
+  <meta property="og:description" content="Premium beachfront villas, land plots & luxury apartments in RAK. Award-winning agents. Off-market opportunities.">
+  <meta property="og:image"       content="https://viberealestate.ae/og-image.jpg">
+  <meta property="og:locale"      content="en_AE">
+  <meta property="og:site_name"   content="Vibe Real Estate">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Best Properties For Sale in RAK | Vibe Real Estate">
+  <meta name="twitter:description" content="Premium beachfront villas, land plots & luxury apartments in Ras Al Khaimah.">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Vibe Real Estate",
+    "url": "https://viberealestate.ae",
+    "logo": "https://viberealestate.ae/logo.png",
+    "description": "Award-winning UAE real estate brokerage specialising in Ras Al Khaimah properties including Al Marjan Island, Mina Al Arab, and Al Hamra Village.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "T1 – 12-12, RAKEZ Amenity Center, Al Hamra FZ",
+      "addressLocality": "Ras Al Khaimah",
+      "addressCountry": "AE"
+    },
+    "telephone": "+97172078106",
+    "email": "info@viberealestate.ae",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61561931037342",
+      "https://www.instagram.com/vibe_real_estate/",
+      "https://www.linkedin.com/company/vibe-real-estate-uae",
+      "https://www.youtube.com/@viberealestateuae3472"
+    ],
+    "areaServed": ["Ras Al Khaimah","Dubai","Sharjah","Umm Al Quwain"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Properties for Sale in Ras Al Khaimah",
+      "numberOfItems": 60
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    /* ── HERO ── */
+    .hero {
+      position:relative; min-height:100vh;
+      display:flex; align-items:center;
+      overflow:hidden;
+    }
+    .hero-media {
+      position:absolute; inset:0; z-index:0;
+    }
+    .hero-media img {
+      width:100%; height:100%; object-fit:cover;
+      filter:brightness(.48) saturate(.9);
+    }
+    .hero-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(105deg, rgba(12,12,14,.82) 0%, rgba(12,12,14,.3) 60%, transparent 100%);
+      z-index:1;
+    }
+    .hero-content {
+      position:relative; z-index:2;
+      width:100%; max-width:var(--max-w);
+      margin:0 auto; padding:120px var(--pad-x) 80px;
+    }
+    .hero .eyebrow { margin-bottom:20px; animation:fadeUp .8s .1s both; }
+    .hero h1       { margin-bottom:22px; color:#fff; animation:fadeUp .8s .25s both; }
+    .hero h1 em    { color:var(--c-gold); font-style:italic; }
+    .hero-lead     { font-size:18px; color:rgba(245,241,234,.75); max-width:560px; line-height:1.7; margin-bottom:48px; animation:fadeUp .8s .4s both; }
+    .hero-actions  { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:60px; animation:fadeUp .8s .52s both; }
+    .hero-search   { animation:fadeUp .8s .64s both; }
+    .hero-stats {
+      display:flex; gap:0;
+      margin-top:56px; animation:fadeUp .8s .76s both;
+    }
+    .hero-stat {
+      padding:20px 36px 20px 0;
+      margin-right:36px;
+      border-right:1px solid rgba(184,150,90,.2);
+    }
+    .hero-stat:last-child { border-right:none; }
+    .hero-stat-num  { font-family:var(--f-display); font-size:36px; font-weight:600; color:var(--c-gold); line-height:1; }
+    .hero-stat-label{ font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:rgba(245,241,234,.55); margin-top:6px; }
+
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(28px); }
+      to   { opacity:1; transform:none; }
+    }
+
+    /* ── PROPERTY TYPE CARDS ── */
+    .type-grid {
+      display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+      border:1px solid var(--c-border2);
+      border-radius:var(--r-md); overflow:hidden;
+    }
+    .type-tile {
+      background:var(--c-ink2);
+      border-right:1px solid var(--c-border2);
+      padding:32px 24px 28px;
+      text-decoration:none; color:inherit;
+      transition:background .25s;
+      display:flex; flex-direction:column;
+      position:relative; overflow:hidden;
+    }
+    .type-tile::after {
+      content:'';
+      position:absolute; bottom:0; left:0; right:0;
+      height:2px; background:var(--c-gold);
+      transform:scaleX(0); transform-origin:left;
+      transition:transform .3s;
+    }
+    .type-tile:hover { background:var(--c-ink3); }
+    .type-tile:hover::after { transform:scaleX(1); }
+    .type-tile:last-child { border-right:none; }
+    .type-icon {
+      width:44px; height:44px; border-radius:var(--r-sm);
+      background:var(--c-ink3); border:1px solid var(--c-border);
+      display:flex; align-items:center; justify-content:center;
+      color:var(--c-gold); margin-bottom:20px;
+    }
+    .type-num  { font-family:var(--f-display); font-size:42px; font-weight:600; color:var(--c-gold); line-height:1; margin-bottom:4px; }
+    .type-name { font-size:16px; font-weight:500; color:var(--c-cream); margin-bottom:4px; }
+    .type-sub  { font-size:12px; color:var(--c-muted); }
+
+    /* ── ABOUT SPLIT ── */
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
+    .about-img-wrap { position:relative; }
+    .about-img-wrap img { width:100%; border-radius:var(--r-lg); object-fit:cover; aspect-ratio:4/5; }
+    .about-badge {
+      position:absolute; bottom:28px; right:-28px;
+      background:var(--c-gold); color:var(--c-ink);
+      padding:20px 24px; border-radius:var(--r-md);
+      text-align:center; font-weight:700;
+      box-shadow:0 8px 32px rgba(184,150,90,.35);
+    }
+    .about-badge-num  { font-family:var(--f-display); font-size:40px; line-height:1; display:block; }
+    .about-badge-txt  { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+    .about-text .eyebrow  { margin-bottom:16px; }
+    .about-text h2        { color:var(--c-white); margin-bottom:20px; }
+    .about-text p         { color:var(--c-muted); font-size:15px; line-height:1.8; margin-bottom:14px; }
+    .about-text .btn      { margin-top:12px; }
+
+    /* ── MARQUEE ── */
+    .marquee-wrap { overflow:hidden; border-top:1px solid var(--c-border2); border-bottom:1px solid var(--c-border2); padding:18px 0; background:var(--c-ink2); }
+    .marquee-track {
+      display:flex; gap:48px;
+      animation:marquee 20s linear infinite;
+      white-space:nowrap;
+    }
+    .marquee-item { font-family:var(--f-display); font-size:16px; color:var(--c-muted); opacity:.45; display:flex; align-items:center; gap:24px; }
+    .marquee-item::after { content:'✦'; color:var(--c-gold); opacity:.5; }
+    @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+
+    /* ── FEATURED SECTION BG ── */
+    .featured-section { background:var(--c-ink2); }
+
+    @media (max-width:900px) {
+      .type-grid { grid-template-columns:repeat(2,1fr); }
+      .type-tile { border-bottom:1px solid var(--c-border2); }
+      .about-grid { grid-template-columns:1fr; gap:40px; }
+      .about-badge { right:16px; }
+      .hero-stats { flex-wrap:wrap; }
+    }
+    @media (max-width:600px) {
+      .type-grid { grid-template-columns:1fr 1fr; }
+      .hero-content { padding-top:80px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar" role="banner">
+  <div class="container">
+    <span class="topbar-brand">Vibe With Us..</span>
+    <div class="topbar-contacts">
+      <a href="tel:072078106" aria-label="Call us">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 6.69a16 16 0 006.29 6.29l1.77-1.36a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        072 078 106
+      </a>
+      <a href="mailto:info@viberealestate.ae" aria-label="Email us">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        info@viberealestate.ae
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Vibe Real Estate Home">
+      <div class="nav-logo-mark" aria-hidden="true">V</div>
+      <span>Vibe <span>Real Estate</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="for-rent.html">For Rent</a></li>
+      <li><a href="for-sale.html">RAK Properties for Sale</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="for-rent.html">For Rent</a>
+    <a href="for-sale.html">RAK Properties for Sale</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="nav-cta">Contact Us</a>
+  </nav>
+</nav>
+
+<!-- ══ HERO ══ -->
+<header class="hero" role="banner">
+  <div class="hero-media">
+    <img
+      src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1800&q=80&auto=format&fit=crop"
+      alt="Luxury beachfront properties in Ras Al Khaimah, UAE"
+      fetchpriority="high"
+      width="1800" height="1200"
+    >
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Ras Al Khaimah · UAE · Al Marjan Island</p>
+    <h1 class="display-xl">
+      Discover the Finest<br>
+      <em>Properties</em> in RAK
+    </h1>
+    <p class="hero-lead">Off-market land deals, beachfront villas, and luxury residences — curated for serious investors and discerning buyers.</p>
+    <div class="hero-actions">
+      <a href="for-sale.html" class="btn btn-primary btn-lg">View Properties for Sale</a>
+      <a href="for-rent.html" class="btn btn-ghost btn-lg">Properties to Rent</a>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="hero-search">
+      <div class="search-bar">
+        <form action="for-sale.html" method="get" role="search" aria-label="Property search">
+          <div class="search-fields">
+            <div class="sf-group">
+              <label for="s-type">Property Type</label>
+              <select id="s-type" name="type">
+                <option value="">All Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+                <option value="townhouse">Townhouse</option>
+                <option value="plot">Plot / Land</option>
+                <option value="penthouse">Penthouse</option>
+              </select>
+            </div>
+            <div class="sf-group">
+              <label for="s-loc">Location</label>
+              <select id="s-loc" name="location">
+                <option value="">All Locations</option>
+                <option value="al-marjan-island">Al Marjan Island</option>
+                <option value="mina-al-arab">Mina Al Arab</option>
+                <option value="al-hamra-village">Al Hamra Village</option>
+                <option value="rak-city">RAK City</option>
+                <option value="sharjah">Sharjah</option>
+              </select>
+            </div>
+            <div class="sf-group">
+              <label for="s-price">Max Budget (AED)</label>
+              <select id="s-price" name="max_price">
+                <option value="">Any Price</option>
+                <option value="1000000">Up to 1M</option>
+                <option value="5000000">Up to 5M</option>
+                <option value="20000000">Up to 20M</option>
+                <option value="50000000">Up to 50M</option>
+                <option value="100000000">50M+</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-stats" role="list" aria-label="Key statistics">
+      <div class="hero-stat" role="listitem">
+        <div class="hero-stat-num">60+</div>
+        <div class="hero-stat-label">Active Listings</div>
+      </div>
+      <div class="hero-stat" role="listitem">
+        <div class="hero-stat-num">AED 500K+</div>
+        <div class="hero-stat-label">Starting Price</div>
+      </div>
+      <div class="hero-stat" role="listitem">
+        <div class="hero-stat-num">5★</div>
+        <div class="hero-stat-label">Verified Reviews</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══ MARQUEE ══ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Al Marjan Island</span>
+    <span class="marquee-item">Beachfront Villas</span>
+    <span class="marquee-item">Mina Al Arab</span>
+    <span class="marquee-item">Land Plots</span>
+    <span class="marquee-item">Nobu Residences</span>
+    <span class="marquee-item">Al Hamra Village</span>
+    <span class="marquee-item">Off-Plan Investment</span>
+    <span class="marquee-item">Golden Visa</span>
+    <span class="marquee-item">Al Marjan Island</span>
+    <span class="marquee-item">Beachfront Villas</span>
+    <span class="marquee-item">Mina Al Arab</span>
+    <span class="marquee-item">Land Plots</span>
+    <span class="marquee-item">Nobu Residences</span>
+    <span class="marquee-item">Al Hamra Village</span>
+    <span class="marquee-item">Off-Plan Investment</span>
+    <span class="marquee-item">Golden Visa</span>
+  </div>
+</div>
+
+<!-- ══ PROPERTY TYPES ══ -->
+<section class="section" aria-labelledby="types-heading">
+  <div class="container">
+    <div class="section-header-row">
+      <div class="section-header" style="margin-bottom:0">
+        <p class="eyebrow">Browse by Category</p>
+        <h2 class="display-lg" id="types-heading">Search by Property Type</h2>
+        <p>Our advisors help you find the perfect property. In-depth insights and assessments for every need.</p>
+      </div>
+      <a href="for-sale.html" class="btn btn-outline" style="flex-shrink:0">View All Listings</a>
+    </div>
+
+    <nav class="type-grid reveal" aria-label="Property categories">
+      <a href="for-sale.html?type=apartment" class="type-tile" aria-label="Browse 27 apartments">
+        <div class="type-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M9 21V9h6v12"/><line x1="9" y1="9" x2="2" y2="9"/><line x1="15" y1="9" x2="22" y2="9"/></svg>
+        </div>
+        <div class="type-num">27</div>
+        <div class="type-name">Apartments</div>
+        <div class="type-sub">Studios to full floors</div>
+      </a>
+      <a href="for-sale.html?type=villa" class="type-tile" aria-label="Browse 15 villas">
+        <div class="type-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="type-num">15</div>
+        <div class="type-name">Villas</div>
+        <div class="type-sub">Beachfront &amp; garden</div>
+      </a>
+      <a href="for-sale.html?type=townhouse" class="type-tile" aria-label="Browse 9 townhouses">
+        <div class="type-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><line x1="9" y1="21" x2="9" y2="12"/><line x1="15" y1="12" x2="15" y2="21"/><line x1="12" y1="7" x2="12" y2="10"/></svg>
+        </div>
+        <div class="type-num">9</div>
+        <div class="type-name">Townhouses</div>
+        <div class="type-sub">Community living</div>
+      </a>
+      <a href="for-sale.html?type=plot" class="type-tile" aria-label="Browse 9 plots">
+        <div class="type-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="3 21 21 21 21 3 3 3"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <div class="type-num">9</div>
+        <div class="type-name">Plots &amp; Land</div>
+        <div class="type-sub">Mixed-use &amp; freehold</div>
+      </a>
+    </nav>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section class="section" style="background:var(--c-ink2); padding-top:80px; padding-bottom:80px;" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img
+          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80&auto=format&fit=crop"
+          alt="Luxury villa in Ras Al Khaimah"
+          loading="lazy"
+          width="900" height="1125"
+        >
+        <div class="about-badge">
+          <span class="about-badge-num">5★</span>
+          <span class="about-badge-txt">Rated Agency</span>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <p class="eyebrow">Who Are We?</p>
+        <h2 class="display-lg" id="about-heading">Vibe<br><em style="font-style:italic">Real Estate</em></h2>
+        <p>A new and contemporary brokerage located in the Northern Emirates, founded by award-winning agents. Vibe Real Estate is friendly, professional and transparent — ensuring a great service to all clients.</p>
+        <p>We specialise in high-potential real estate investments with a focus on land deals and premium properties in Ras Al Khaimah and Dubai. We help investors and developers access off-market opportunities and navigate the market with confidence.</p>
+        <a href="about.html" class="btn btn-outline" style="margin-top:24px">Meet Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PARTNERS ══ -->
+<div class="partners-strip" role="complementary" aria-label="Our development partners">
+  <div class="container">
+    <span class="partners-label">Trusted Partners</span>
+    <div class="partners-list">
+      <span class="partner-item">RAK Properties</span>
+      <span class="partner-item">Al Hamra Village</span>
+      <span class="partner-item">Select Group</span>
+      <span class="partner-item">Al Marjan Island</span>
+      <span class="partner-item">Mina Al Arab</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FEATURED PROPERTIES ══ -->
+<section class="section featured-section" aria-labelledby="featured-heading">
+  <div class="container">
+    <div class="section-header-row">
+      <div class="section-header" style="margin-bottom:0">
+        <p class="eyebrow">Investment Opportunities</p>
+        <h2 class="display-lg" id="featured-heading">Recently Added Properties</h2>
+        <p>Browse the latest listings in Ras Al Khaimah — from beachfront land to luxury residences.</p>
+      </div>
+      <a href="for-sale.html" class="btn btn-ghost" style="flex-shrink:0">All 53 Listings →</a>
+    </div>
+
+    <div class="filter-bar" role="group" aria-label="Filter properties by type">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Land for Sale</button>
+      <button class="filter-btn">Villas</button>
+      <button class="filter-btn">Townhouses</button>
+      <button class="filter-btn">Apartments</button>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Property 1 -->
+      <article class="prop-card reveal" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img" aria-label="View property: Mixed Use Land Al Marjan Island">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Plot</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=700&q=75&auto=format&fit=crop"
+            alt="Mixed use land plot at Treasure Island, Al Marjan Island RAK"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price" itemprop="price">AED 31,000,000</div>
+          <h3 class="prop-card-title" itemprop="name">Mixed Use Land | G+21 | Close to Prime Projects</h3>
+          <div class="prop-card-loc" itemprop="address">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Treasure Island, Al Marjan Island
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 21 21 21 21 3 3 3"/></svg>
+              256,000 sqft
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 2 -->
+      <article class="prop-card reveal reveal-delay-1" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Villa</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=700&q=75&auto=format&fit=crop"
+            alt="Luxury beachfront villa in Ras Al Khaimah"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price">AED 19,500,000</div>
+          <h3 class="prop-card-title">Luxury Beach Front Villa – Timeless Heritage</h3>
+          <div class="prop-card-loc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Al Hamra Village, RAK
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">🛏 5 Beds</span>
+            <span class="prop-card-spec">🚿 6 Baths</span>
+            <span class="prop-card-spec">📐 13,000 sqft</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 3 -->
+      <article class="prop-card reveal reveal-delay-2" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Apartment</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=75&auto=format&fit=crop"
+            alt="Nobu Residences luxury apartment Al Marjan Island"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price">AED 4,000,000</div>
+          <h3 class="prop-card-title">Nobu Residences | Live 3 Mins from Casino</h3>
+          <div class="prop-card-loc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Nobu Residence, Al Marjan Island
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">🛏 2 Beds</span>
+            <span class="prop-card-spec">🚿 2 Baths</span>
+            <span class="prop-card-spec">📐 1,500 sqft</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 4 -->
+      <article class="prop-card reveal" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Plot</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1623298317883-61b800b695e0?w=700&q=75&auto=format&fit=crop"
+            alt="Super beachfront land for sale Al Marjan Island RAK"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price">AED 67,000,000</div>
+          <h3 class="prop-card-title">Super Beachfront Land | G+7 | Mixed Use</h3>
+          <div class="prop-card-loc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Treasure Island, Al Marjan Island
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">📐 120,000 sqft</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 5 -->
+      <article class="prop-card reveal reveal-delay-1" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Townhouse</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=75&auto=format&fit=crop"
+            alt="Furnished townhouse near Waldorf Astoria RAK"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price">AED 1,850,000</div>
+          <h3 class="prop-card-title">Walking Distance to Waldorf | Fully Furnished Townhouse</h3>
+          <div class="prop-card-loc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Al Hamra Village, RAK
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">🛏 4 Beds</span>
+            <span class="prop-card-spec">🚿 3 Baths</span>
+            <span class="prop-card-spec">📐 2,000 sqft</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Property 6 -->
+      <article class="prop-card reveal reveal-delay-2" itemscope itemtype="https://schema.org/RealEstateListing">
+        <a href="for-sale.html" class="prop-card-img">
+          <div class="prop-card-badges">
+            <span class="tag tag-gold">Featured</span>
+            <span class="tag tag-dark">Apartment</span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=75&auto=format&fit=crop"
+            alt="One bedroom beach access apartment Al Marjan Island"
+            loading="lazy" width="700" height="525"
+          >
+        </a>
+        <div class="prop-card-body">
+          <div class="prop-card-price">AED 850,000</div>
+          <h3 class="prop-card-title">One Bedroom | Easy Beach Access | Ground Floor</h3>
+          <div class="prop-card-loc">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Pacific, Al Marjan Island
+          </div>
+          <div class="prop-card-specs">
+            <span class="prop-card-spec">🛏 1 Bed</span>
+            <span class="prop-card-spec">🚿 1 Bath</span>
+            <span class="prop-card-spec">📐 745 sqft</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:48px;">
+      <a href="for-sale.html" class="btn btn-outline btn-lg">View All 53 Properties →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="section" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Client Stories</p>
+      <h2 class="display-lg" id="testi-heading">What Our Clients Say</h2>
+    </div>
+    <div class="grid-3">
+
+      <article class="testi-card reveal" itemscope itemtype="https://schema.org/Review">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testi-text" itemprop="reviewBody">
+          "Adil was truly exceptional. I met him at a real estate portal focused on Al Marjan Island. I was impressed with his level of knowledge and the market data he had. It was a no-brainer to work with him — and I'm so thankful I did."
+        </blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">A</div>
+          <div>
+            <div class="testi-name" itemprop="author">Anirban</div>
+            <div class="testi-role">Property Buyer, RAK</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal reveal-delay-1" itemscope itemtype="https://schema.org/Review">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testi-text" itemprop="reviewBody">
+          "Thank you Deniro for helping us buy this property in Ras Al Khaimah. Your entire team is extremely efficient and helped us throughout the entire process. Highly recommend!"
+        </blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">A</div>
+          <div>
+            <div class="testi-name" itemprop="author">Anjum</div>
+            <div class="testi-role">Property Buyer, RAK</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card reveal reveal-delay-2" itemscope itemtype="https://schema.org/Review">
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testi-text" itemprop="reviewBody">
+          "Anthony with his Vibe was very professional, honest and super efficient throughout the whole transaction — so transparent with zero biased intentions. Highly recommended agent."
+        </blockquote>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">E</div>
+          <div>
+            <div class="testi-name" itemprop="author">Ettiene Roodt</div>
+            <div class="testi-role">Property Seller/Buyer</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BLOG ══ -->
+<section class="section section-sm" style="background:var(--c-ink2); padding-top:72px; padding-bottom:72px;" aria-labelledby="blog-heading">
+  <div class="container">
+    <div class="section-header-row">
+      <div class="section-header" style="margin-bottom:0">
+        <p class="eyebrow">Insights</p>
+        <h2 class="display-md" id="blog-heading">Buyer &amp; Seller Guides</h2>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:40px">
+
+      <article class="blog-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card-img">
+          <img
+            src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=75&auto=format&fit=crop"
+            alt="Buying real estate in UAE guide"
+            loading="lazy" width="800" height="450"
+          >
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta" itemprop="datePublished">July 30, 2024 · Real Estate</div>
+          <h3 class="blog-card-title" itemprop="headline">10 Tips for Buying Real Estate in UAE | Guide</h3>
+          <p class="blog-card-excerpt" itemprop="description">With its booming economy, thriving tourism industry, and favourable investment climate, the UAE has become one of the world's most attractive real estate markets for global investors.</p>
+          <a href="#" class="arrow-link">
+            Continue Reading
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card reveal reveal-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card-img">
+          <img
+            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=75&auto=format&fit=crop"
+            alt="Top reasons to buy land in Ras Al Khaimah"
+            loading="lazy" width="800" height="450"
+          >
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta" itemprop="datePublished">July 30, 2024 · Real Estate</div>
+          <h3 class="blog-card-title" itemprop="headline">Top 10 Reasons to Buy Land for Development in Ras Al Khaimah – UAE</h3>
+          <p class="blog-card-excerpt" itemprop="description">Discover why Ras Al Khaimah is attracting serious investors from around the globe — from freehold ownership to rapid capital appreciation and casino-driven tourism growth.</p>
+          <a href="#" class="arrow-link">
+            Continue Reading
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section style="background:var(--c-gold);padding:60px 0;" aria-labelledby="cta-heading">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;">
+    <div>
+      <h2 class="display-md" id="cta-heading" style="color:var(--c-ink);margin-bottom:8px;">Ready to Invest in RAK?</h2>
+      <p style="color:rgba(12,12,14,.65);font-size:15px;">Speak to our team today about off-market opportunities and land deals.</p>
+    </div>
+    <a href="contact.html" class="btn" style="background:var(--c-ink);color:var(--c-gold);font-size:14px;padding:16px 40px;flex-shrink:0;">Get in Touch →</a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-mark">V</div>
+          <span>Vibe <span style="color:var(--c-gold)">Real Estate</span></span>
+        </div>
+        <p class="footer-desc">UAE-based brokerage specialising in high-potential real estate investments. Land deals, beachfront villas, and premium apartments in Ras Al Khaimah and Dubai.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/profile.php?id=61561931037342" class="footer-social" target="_blank" rel="noopener" aria-label="Facebook">fb</a>
+          <a href="https://www.instagram.com/vibe_real_estate/" class="footer-social" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://www.linkedin.com/company/vibe-real-estate-uae" class="footer-social" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="https://www.youtube.com/@viberealestateuae3472" class="footer-social" target="_blank" rel="noopener" aria-label="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="for-rent.html">For Rent</a></li>
+          <li><a href="for-sale.html">RAK Properties for Sale</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Property Types</h4>
+        <ul>
+          <li><a href="for-sale.html?type=apartment">Apartments (27)</a></li>
+          <li><a href="for-sale.html?type=villa">Villas (15)</a></li>
+          <li><a href="for-sale.html?type=townhouse">Townhouses (9)</a></li>
+          <li><a href="for-sale.html?type=plot">Plots &amp; Land (9)</a></li>
+          <li><a href="for-sale.html?type=penthouse">Penthouses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <address style="font-style:normal">
+          <p class="footer-address">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            T1 – 12-12, RAKEZ Amenity Center Al Hamra FZ, RAK – UAE
+          </p>
+          <p class="footer-address">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            <a href="mailto:info@viberealestate.ae">info@viberealestate.ae</a>
+          </p>
+          <p class="footer-address">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 6.69a16 16 0 006.29 6.29l1.77-1.36a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:072078106">072 078 106</a>
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Vibe Real Estate — All Rights Reserved</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="https://viberealestate.ae">viberealestate.ae</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="css/shared.js" defer></script>
+</body>
+</html>
