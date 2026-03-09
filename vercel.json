@@ -1,0 +1,1 @@
+{"version":2,"buildCommand":null,"outputDirectory":".","framework":null,"rewrites":[{"source":"/","destination":"/index.html"},{"source":"/for-sale","destination":"/for-sale.html"},{"source":"/for-rent","destination":"/for-rent.html"},{"source":"/about","destination":"/about.html"},{"source":"/contact","destination":"/contact.html"}]}
